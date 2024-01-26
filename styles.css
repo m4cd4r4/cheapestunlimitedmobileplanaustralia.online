@@ -1,0 +1,156 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    background-color: #EBFCF6; /* Light green background */
+}
+
+header {
+    background-color: #FE5751; /* Bright red */
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    text-align: center;
+    background-color: #FFAA98; /* Light coral */
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+}
+
+/* Base styles */
+.container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 0 15px; /* Add some padding on the sides */
+  }
+  
+  .hero-section,
+  .page-footer {
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+  }
+  
+  .hero-section {
+    height: 300px; /* Adjust height as needed */
+  }
+  
+  .page-footer {
+    height: 150px; /* Adjust height as needed */
+  }
+  
+  /* Responsive viewports */
+  @media (max-width: 1199px) {
+    /* Styles for screens less than 1200px wide */
+  }
+  
+  @media (max-width: 991px) {
+    /* Styles for screens less than 992px wide */
+  }
+  
+  @media (max-width: 767px) {
+    .hero-section {
+      height: 200px; /* Adjust height for smaller screens */
+    }
+    .page-footer {
+      height: 100px; /* Adjust height for smaller screens */
+    }
+  }
+  
+  @media (max-width: 575px) {
+    /* Styles for screens less than 576px wide */
+    .hero-section {
+      height: 150px; /* Adjust height for very small screens */
+    }
+    .page-footer {
+      height: 80px; /* Adjust height for very small screens */
+    }
+  }
+  
+
+/* Hero Section Styles */
+.hero-section {
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    height: 300px; /* Adjust height as needed */
+    position: relative;
+  }
+  
+  /* Footer Styles */
+  .page-footer {
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    height: 150px; /* Adjust height as needed */
+    position: relative;
+  }
+
+.carousel {
+    position: relative;
+    max-width: 600px; /* Adjust as needed */
+    margin: auto;
+    overflow: hidden;
+  }
+  
+  .carousel__images img {
+    width: 100%;
+    display: none; /* Hide images initially */
+  }
+  
+  .carousel__images img:first-child {
+    display: block; /* Show the first image */
+  }
+  
+  .carousel__button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%) scale(10); /* Scale up the buttons */
+    opacity: 0; /* Make buttons invisible */
+    width: 100px; /* Increase the width */
+    height: 100px; /* Increase the height */
+    background-color: transparent; /* Make the background transparent */
+    border: none;
+    cursor: pointer;
+    z-index: 2; /* Ensure the buttons are above the images */
+  }
+  
+  .carousel__button--left {
+    left: 0;
+    border-right: 50px solid transparent; /* Invisible hit area */
+  }
+  
+  .carousel__button--right {
+    right: 0;
+    border-left: 50px solid transparent; /* Invisible hit area */
+  }
+  
+
+section {
+    padding: 20px;
+    border-bottom: 1px solid #ddd;
+    background-color: #EBFCF6; /* Light green for sections */
+}
+
+footer {
+    background-color: #FE5751; /* Bright red */
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
