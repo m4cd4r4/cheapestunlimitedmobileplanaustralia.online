@@ -129,9 +129,8 @@ nav ul li a {
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
-    height: 200px; /* Adjust height as needed */
+    height: 300px; /* Adjust height as needed */
     position: relative;
-    margin-bottom: 150px; /* Comfortable space above the footer */
   }
   
 /* Image Cards Section */
@@ -182,7 +181,7 @@ nav ul li a {
 }
 
   /* Footer Styles */
-.page-footer {
+  .page-footer {
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
@@ -190,49 +189,43 @@ nav ul li a {
     position: relative;
   }
 
-/* Base styles */
-.container {
-    max-width: 1200px;
-    margin: auto;
-    padding: 0 15px; /* Add some padding on the sides */
-}
-
-/* Carousel Styles */
 .carousel {
     position: relative;
+    max-width: 600px; /* Adjust as needed */
     margin: auto;
     overflow: hidden;
-    /* Set a max-width that suits your design */
-    max-width: 80%; /* Adjust this value as needed */
-}
-
-.carousel__images {
-    display: flex; /* Align images in a row */
-    justify-content: center; /* Center images in the flex container */
-}
-
-.carousel__images img {
-    /* Adjust the width as needed to control the size of the images */
-    width: 100%; /* Full width of each flex item */
-    flex: 0 0 auto; /* Prevent images from growing or shrinking */
-    display: none; /* Hide images initially */
-}
-
-.carousel__images img:first-child {
-    display: block; /* Show the first image */
-}
+  }
   
-.carousel__button {
+  .carousel__images img {
+    width: 100%;
+    display: none; /* Hide images initially */
+  }
+  
+  .carousel__images img:first-child {
+    display: block; /* Show the first image */
+  }
+  
+  .carousel__button {
     position: absolute;
     top: 50%;
-    transform: translateY(-50%); /* Scale up the buttons */
+    transform: translateY(-50%) scale(10); /* Scale up the buttons */
     opacity: 0; /* Make buttons invisible */
     width: 100px; /* Increase the width */
     height: 100px; /* Increase the height */
     background-color: transparent; /* Make the background transparent */
     border: none;
     cursor: pointer;
-    z-index: 5; /* Ensure buttons are above images */
+    z-index: 2; /* Ensure the buttons are above the images */
+  }
+  
+  .carousel__button--left {
+    left: 0;
+    border-right: 50px solid transparent; /* Invisible hit area */
+  }
+  
+  .carousel__button--right {
+    right: 0;
+    border-left: 50px solid transparent; /* Invisible hit area */
   }
   
 
